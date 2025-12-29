@@ -30,6 +30,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${orbitron.variable} ${inter.variable}`}>
       <body className="bg-background text-foreground font-inter antialiased min-h-screen">
+        {/* Hidden form for Netlify Forms detection during build */}
+        <form name="quote" data-netlify="true" netlify-honeypot="bot-field" hidden>
+          <input name="form-name" type="hidden" value="quote" />
+          <input name="bot-field" />
+          <input name="name" />
+          <input name="email" />
+          <input name="phone" />
+          <input name="company" />
+          <input name="project_type" />
+          <input name="budget" />
+          <textarea name="description"></textarea>
+        </form>
         <BackgroundOrbs />
         <div className="relative z-10 flex flex-col min-h-screen">
           <Navbar />
