@@ -105,27 +105,62 @@ export default function ServicesPage() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    // Explicitly set form-name for Netlify (required for JS submissions)
-    formData.set("form-name", "quote");
+    // Extract form values
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const phone = formData.get("phone") as string;
+    const company = formData.get("company") as string;
+    const projectType = formData.get("project_type") as string;
+    const budget = formData.get("budget") as string;
+    const description = formData.get("description") as string;
 
-    // Convert FormData to URLSearchParams
-    const urlEncodedData = new URLSearchParams();
-    formData.forEach((value, key) => {
-      urlEncodedData.append(key, value.toString());
-    });
+    // Format project type for display
+    const projectTypeDisplay = {
+      mobile: "📱 Mobile App",
+      website: "🌐 Website",
+      both: "🎯 Both (Mobile + Website)"
+    }[projectType] || projectType;
+
+    // Format budget for display
+    const budgetDisplay = {
+      "5000-10000": "$5,000 - $10,000",
+      "10000-25000": "$10,000 - $25,000",
+      "25000-50000": "$25,000 - $50,000",
+      "50000+": "$50,000+"
+    }[budget] || budget;
+
+    // Discord webhook message with embed
+    const discordMessage = {
+      embeds: [{
+        title: "📬 New Quote Request",
+        color: 0x00d4ff,
+        fields: [
+          { name: "👤 Name", value: name, inline: true },
+          { name: "📧 Email", value: email, inline: true },
+          { name: "📱 Phone", value: phone || "Not provided", inline: true },
+          { name: "🏢 Company", value: company || "Not provided", inline: true },
+          { name: "📋 Project Type", value: projectTypeDisplay, inline: true },
+          { name: "💰 Budget", value: budgetDisplay, inline: true },
+          { name: "📝 Description", value: description.length > 1024 ? description.substring(0, 1021) + "..." : description }
+        ],
+        timestamp: new Date().toISOString(),
+        footer: {
+          text: "Digital App USA - Quote Form"
+        }
+      }]
+    };
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("https://discord.com/api/webhooks/1455226213462311157/_N8sZsMJ2EjCDDWl7Goxt1bJRPDUm-xSWPKzkkMR6Ho-rlswzYl_m4pMMZJhP2gr3-e7", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: urlEncodedData.toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(discordMessage),
       });
 
-      // Netlify returns 200 for successful form submissions
-      if (response.ok || response.status === 200) {
+      if (response.ok || response.status === 204) {
         setFormSubmitted(true);
       } else {
-        console.error("Form response status:", response.status);
+        console.error("Discord webhook response:", response.status);
         throw new Error("Form submission failed");
       }
     } catch (error) {
@@ -326,17 +361,7 @@ export default function ServicesPage() {
                 viewport={{ once: true }}
                 className="bg-[rgba(15,15,25,0.7)] border border-white/10 rounded-2xl p-8"
               >
-                <form
-                  name="quote"
-                  method="POST"
-                  data-netlify="true"
-                  netlify-honeypot="bot-field"
-                  onSubmit={handleSubmit}
-                >
-                  <input type="hidden" name="form-name" value="quote" />
-                  <p style={{ display: 'none' }}>
-                    <input name="bot-field" />
-                  </p>
+                <form onSubmit={handleSubmit}>
 
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
                     {/* Name */}
