@@ -105,13 +105,29 @@ export default function ServicesPage() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    // Explicitly set form-name for Netlify (required for JS submissions)
+    formData.set("form-name", "quote");
+
+    // Convert FormData to URLSearchParams
+    const urlEncodedData = new URLSearchParams();
+    formData.forEach((value, key) => {
+      urlEncodedData.append(key, value.toString());
+    });
+
     try {
-      await fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+        body: urlEncodedData.toString(),
       });
-      setFormSubmitted(true);
+
+      // Netlify returns 200 for successful form submissions
+      if (response.ok || response.status === 200) {
+        setFormSubmitted(true);
+      } else {
+        console.error("Form response status:", response.status);
+        throw new Error("Form submission failed");
+      }
     } catch (error) {
       console.error("Form submission error:", error);
       alert("There was an error submitting the form. Please try again.");
