@@ -114,6 +114,7 @@ export default function TermsPage() {
             <ul className="text-white/70 text-[15px] leading-relaxed mb-4 pl-6 list-disc space-y-2">
               <li><strong className="text-white">CalculX:</strong> A calculator application with integrated private messaging features</li>
               <li><strong className="text-white">Lottery AI:</strong> An AI-powered lottery number generator for Powerball and Mega Millions</li>
+              <li><strong className="text-white">KEMMI:</strong> An AI companion application for conversational support and emotional wellness</li>
               <li><strong className="text-white">BookAI:</strong> An AI-powered accounting application (in development)</li>
               <li><strong className="text-white">ZodiacMatch:</strong> An astrology compatibility application (in development)</li>
             </ul>
@@ -357,13 +358,164 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          {/* Section 6: Acceptable Use */}
+          {/* Section 6: KEMMI AI Companion */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              6. Acceptable Use
+              6. KEMMI AI Companion
             </h2>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.1 You Agree To:</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.1 Description</h3>
+            <p className="text-white/70 text-[15px] leading-relaxed mb-4">
+              KEMMI is an AI companion application that provides conversational support and emotional wellness features. KEMMI uses artificial intelligence to engage in personalized conversations with users.
+            </p>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.2 Age Requirement</h3>
+            <div className="bg-[#ff6b6b]/[0.08] border border-[#ff6b6b]/20 rounded-xl p-5 mb-4">
+              <p className="text-[#ffc8c8]/90 text-[15px] leading-relaxed font-semibold">
+                KEMMI is intended for users aged 18 and older.
+              </p>
+            </div>
+            <p className="text-white/70 text-[15px] leading-relaxed mb-4">
+              By using KEMMI, you confirm that you are at least 18 years old. Users under 18 are not permitted to use this application.
+            </p>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.3 Subscription Plans</h3>
+            <p className="text-white/70 text-[15px] leading-relaxed mb-4">
+              KEMMI offers credit-based subscription plans:
+            </p>
+            <table className="w-full mb-6 border-collapse">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 text-left text-cyan font-semibold">Plan</th>
+                  <th className="py-3 px-4 text-left text-cyan font-semibold">Price</th>
+                  <th className="py-3 px-4 text-left text-cyan font-semibold">Credits/Month</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-white/10">
+                  <td className="py-3 px-4 text-white/70">Lite</td>
+                  <td className="py-3 px-4 text-white/70">$4.99 USD</td>
+                  <td className="py-3 px-4 text-white/70">150 messages</td>
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="py-3 px-4 text-white/70">Standard</td>
+                  <td className="py-3 px-4 text-white/70">$9.99 USD</td>
+                  <td className="py-3 px-4 text-white/70">400 messages</td>
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="py-3 px-4 text-white/70">Premium</td>
+                  <td className="py-3 px-4 text-white/70">$17.99 USD</td>
+                  <td className="py-3 px-4 text-white/70">1,000 messages</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.4 Bonus Credit Packs (One-Time Purchases)</h3>
+            <p className="text-white/70 text-[15px] leading-relaxed mb-4">
+              In addition to subscriptions, you can purchase bonus credit packs:
+            </p>
+            <table className="w-full mb-6 border-collapse">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 text-left text-cyan font-semibold">Pack</th>
+                  <th className="py-3 px-4 text-left text-cyan font-semibold">Price</th>
+                  <th className="py-3 px-4 text-left text-cyan font-semibold">Credits</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-white/10">
+                  <td className="py-3 px-4 text-white/70">Small Pack</td>
+                  <td className="py-3 px-4 text-white/70">$1.99 USD</td>
+                  <td className="py-3 px-4 text-white/70">+30 messages</td>
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="py-3 px-4 text-white/70">Medium Pack</td>
+                  <td className="py-3 px-4 text-white/70">$4.99 USD</td>
+                  <td className="py-3 px-4 text-white/70">+100 messages</td>
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="py-3 px-4 text-white/70">Large Pack</td>
+                  <td className="py-3 px-4 text-white/70">$9.99 USD</td>
+                  <td className="py-3 px-4 text-white/70">+250 messages</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.5 Credit Terms</h3>
+            <div className="bg-cyan/[0.08] border border-cyan/20 rounded-xl p-5 mb-4">
+              <p className="text-white/70 text-[15px] leading-relaxed">
+                <strong className="text-white">Important:</strong> Subscription credits reset monthly and do NOT roll over. Unused subscription credits expire at the end of each billing period.
+              </p>
+            </div>
+            <ul className="text-white/70 text-[15px] leading-relaxed mb-4 pl-6 list-disc space-y-2">
+              <li>Subscription credits are renewed at the start of each billing cycle</li>
+              <li>Unused subscription credits <strong className="text-white">do not carry over</strong> to the next month</li>
+              <li>Bonus credit packs <strong className="text-white">never expire</strong> and can be used anytime</li>
+              <li>Credits are consumed in order: subscription credits first, then bonus credits</li>
+            </ul>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.6 Billing and Auto-Renewal</h3>
+            <ul className="text-white/70 text-[15px] leading-relaxed mb-4 pl-6 list-disc space-y-2">
+              <li>Payment will be charged to your Apple ID account at confirmation of purchase</li>
+              <li>All payments are processed securely through the Apple App Store</li>
+              <li>Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period</li>
+              <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
+            </ul>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.7 Managing Your Subscription</h3>
+            <p className="text-white/70 text-[15px] leading-relaxed mb-4">
+              You can manage or cancel your subscription at any time:
+            </p>
+            <ol className="text-white/70 text-[15px] leading-relaxed mb-4 pl-6 list-decimal space-y-2">
+              <li>Open the <strong className="text-white">Settings</strong> app on your iPhone/iPad</li>
+              <li>Tap your <strong className="text-white">Apple ID</strong> (your name at the top)</li>
+              <li>Tap <strong className="text-white">Subscriptions</strong></li>
+              <li>Select <strong className="text-white">KEMMI</strong></li>
+              <li>Tap <strong className="text-white">Cancel Subscription</strong> or choose a different plan</li>
+            </ol>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.8 Cancellation and Refund Policy</h3>
+            <ul className="text-white/70 text-[15px] leading-relaxed mb-4 pl-6 list-disc space-y-2">
+              <li>You may cancel your subscription at any time</li>
+              <li>Cancellation takes effect at the end of the current billing period</li>
+              <li>You will retain access to premium features until the end of your paid period</li>
+              <li>All purchases are final and non-refundable</li>
+              <li>For refund requests, contact Apple directly: <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer" className="text-cyan hover:underline">reportaproblem.apple.com</a></li>
+            </ul>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.9 Apple Terms</h3>
+            <p className="text-white/70 text-[15px] leading-relaxed mb-4">
+              Use of KEMMI is also subject to Apple&apos;s Standard End User License Agreement (EULA):
+            </p>
+            <p className="text-white/70 text-[15px] leading-relaxed mb-4">
+              <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer" className="text-cyan hover:underline">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+            </p>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.10 AI Disclaimer</h3>
+            <div className="bg-[#ff6b6b]/[0.08] border border-[#ff6b6b]/20 rounded-xl p-5 mb-4">
+              <p className="text-[#ffc8c8]/90 text-[15px] leading-relaxed font-semibold">
+                KEMMI IS AN AI AND NOT A LICENSED THERAPIST OR MEDICAL PROFESSIONAL.
+              </p>
+            </div>
+            <p className="text-white/70 text-[15px] leading-relaxed mb-4">
+              By using KEMMI, you acknowledge and agree that:
+            </p>
+            <ul className="text-white/70 text-[15px] leading-relaxed pl-6 list-disc space-y-2">
+              <li>KEMMI is an AI companion for entertainment and emotional support purposes only</li>
+              <li>KEMMI is not a substitute for professional mental health care, therapy, or medical advice</li>
+              <li>You should consult qualified healthcare professionals for medical or psychological concerns</li>
+              <li>In case of emergency or crisis, contact local emergency services or a crisis hotline immediately</li>
+              <li>Digital App LLC is not responsible for decisions made based on conversations with KEMMI</li>
+            </ul>
+          </section>
+
+          {/* Section 7: Acceptable Use */}
+          <section className="mb-10">
+            <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
+              7. Acceptable Use
+            </h2>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">7.1 You Agree To:</h3>
             <ul className="text-white/70 text-[15px] leading-relaxed mb-4 pl-6 list-disc space-y-2">
               <li>Use our services only for lawful purposes</li>
               <li>Comply with all applicable laws and regulations</li>
@@ -371,7 +523,7 @@ export default function TermsPage() {
               <li>Provide accurate information when required</li>
             </ul>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.2 Prohibited Activities</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">7.2 Prohibited Activities</h3>
             <div className="bg-[#ff6b6b]/[0.08] border border-[#ff6b6b]/20 rounded-xl p-5 mb-4">
               <p className="text-[#ffc8c8]/90 text-[15px] leading-relaxed">
                 You may NOT use our services to:
@@ -389,16 +541,16 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          {/* Section 7: CalculX Messaging Features */}
+          {/* Section 8: CalculX Messaging Features */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              7. CalculX Messaging Features
+              8. CalculX Messaging Features
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               For the CalculX application specifically:
             </p>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">7.1 Messaging Features</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">8.1 Messaging Features</h3>
             <ul className="text-white/70 text-[15px] leading-relaxed mb-4 pl-6 list-disc space-y-2">
               <li>The messaging feature is designed for private, personal communication</li>
               <li>Messages are automatically deleted after 24 hours</li>
@@ -406,14 +558,14 @@ export default function TermsPage() {
               <li>We do not monitor, read, or store message content beyond the 24-hour delivery period</li>
             </ul>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">7.2 Room Codes</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">8.2 Room Codes</h3>
             <ul className="text-white/70 text-[15px] leading-relaxed mb-4 pl-6 list-disc space-y-2">
               <li>Room codes are unique identifiers for chat rooms</li>
               <li>Only share room codes with people you trust</li>
               <li>You are responsible for who you invite to your rooms</li>
             </ul>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">7.3 Age Requirement</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">8.3 Age Requirement</h3>
             <div className="bg-[#ff6b6b]/[0.08] border border-[#ff6b6b]/20 rounded-xl p-5 mb-4">
               <p className="text-[#ffc8c8]/90 text-[15px] leading-relaxed font-semibold">
                 CalculX messaging features are intended for users aged 17 and older.
@@ -423,7 +575,7 @@ export default function TermsPage() {
               By using the messaging features, you confirm that you are at least 17 years old. Users under 17 are not permitted to create accounts or use chat features. We reserve the right to terminate accounts of users who misrepresent their age.
             </p>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">7.4 Prohibited Content</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">8.4 Prohibited Content</h3>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               Users are strictly prohibited from sharing the following content in CalculX:
             </p>
@@ -437,7 +589,7 @@ export default function TermsPage() {
               <li><strong className="text-white">Deceptive content:</strong> Misinformation, impersonation, or fraudulent schemes</li>
             </ul>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">7.5 Reporting and Moderation</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">8.5 Reporting and Moderation</h3>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               We are committed to maintaining a safe environment for all users.
             </p>
@@ -459,7 +611,7 @@ export default function TermsPage() {
               <li>We may report illegal activity to appropriate law enforcement authorities when required by law or when necessary to protect safety</li>
             </ul>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">7.6 User Responsibility</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">8.6 User Responsibility</h3>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               You are responsible for:
             </p>
@@ -474,23 +626,23 @@ export default function TermsPage() {
             </p>
           </section>
 
-          {/* Section 8: Intellectual Property */}
+          {/* Section 9: Intellectual Property */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              8. Intellectual Property
+              9. Intellectual Property
             </h2>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">8.1 Our Property</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">9.1 Our Property</h3>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               All content, features, and functionality of our applications and website — including but not limited to text, graphics, logos, icons, images, software, and design — are owned by Digital App LLC and protected by intellectual property laws.
             </p>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">8.2 Limited License</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">9.2 Limited License</h3>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               We grant you a limited, non-exclusive, non-transferable license to use our applications for personal, non-commercial purposes in accordance with these Terms.
             </p>
 
-            <h3 className="text-lg text-white font-semibold mt-6 mb-3">8.3 Restrictions</h3>
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">9.3 Restrictions</h3>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               You may not:
             </p>
@@ -502,10 +654,10 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          {/* Section 9: User Content */}
+          {/* Section 10: User Content */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              9. User Content
+              10. User Content
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               You retain ownership of any content you create or share through our services. By using our services, you grant us a limited license to process your content solely for the purpose of providing the service.
@@ -515,10 +667,10 @@ export default function TermsPage() {
             </p>
           </section>
 
-          {/* Section 10: Disclaimer of Warranties */}
+          {/* Section 11: Disclaimer of Warranties */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              10. Disclaimer of Warranties
+              11. Disclaimer of Warranties
             </h2>
             <div className="bg-[#ff6b6b]/[0.08] border border-[#ff6b6b]/20 rounded-xl p-5 mb-4">
               <p className="text-[#ffc8c8]/90 text-[15px] leading-relaxed">
@@ -536,10 +688,10 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          {/* Section 11: Limitation of Liability */}
+          {/* Section 12: Limitation of Liability */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              11. Limitation of Liability
+              12. Limitation of Liability
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               To the maximum extent permitted by law, Digital App LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:
@@ -554,10 +706,10 @@ export default function TermsPage() {
             </p>
           </section>
 
-          {/* Section 12: Indemnification */}
+          {/* Section 13: Indemnification */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              12. Indemnification
+              13. Indemnification
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               You agree to indemnify and hold harmless Digital App LLC, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from:
@@ -569,20 +721,20 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          {/* Section 13: Third-Party Services */}
+          {/* Section 14: Third-Party Services */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              13. Third-Party Services
+              14. Third-Party Services
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed">
               Our applications may integrate with third-party services (such as Apple App Store, Supabase, Google). Your use of these services is subject to their respective terms and privacy policies. We are not responsible for third-party services.
             </p>
           </section>
 
-          {/* Section 14: Modifications to Services */}
+          {/* Section 15: Modifications to Services */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              14. Modifications to Services
+              15. Modifications to Services
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               We reserve the right to:
@@ -597,10 +749,10 @@ export default function TermsPage() {
             </p>
           </section>
 
-          {/* Section 15: Termination */}
+          {/* Section 16: Termination */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              15. Termination
+              16. Termination
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               We may terminate or suspend your access to our services immediately, without prior notice, for any reason, including if you breach these Terms.
@@ -616,10 +768,10 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          {/* Section 16: Governing Law */}
+          {/* Section 17: Governing Law */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              16. Governing Law
+              17. Governing Law
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               These Terms shall be governed by and construed in accordance with the laws of the State of Wyoming, United States, without regard to its conflict of law provisions.
@@ -629,30 +781,30 @@ export default function TermsPage() {
             </p>
           </section>
 
-          {/* Section 17: Severability */}
+          {/* Section 18: Severability */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              17. Severability
+              18. Severability
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed">
               If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.
             </p>
           </section>
 
-          {/* Section 18: Entire Agreement */}
+          {/* Section 19: Entire Agreement */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              18. Entire Agreement
+              19. Entire Agreement
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed">
               These Terms, together with our Privacy Policy, constitute the entire agreement between you and Digital App LLC regarding the use of our services.
             </p>
           </section>
 
-          {/* Section 19: Contact Us */}
+          {/* Section 20: Contact Us */}
           <section className="mb-10">
             <h2 className="text-[22px] text-cyan font-semibold mt-10 mb-4 pb-2.5 border-b border-cyan/20">
-              19. Contact Us
+              20. Contact Us
             </h2>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">
               If you have questions about these Terms, please contact us:

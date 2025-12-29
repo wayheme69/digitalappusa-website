@@ -112,6 +112,30 @@ export default function PrivacyPage() {
                 <strong className="text-white">Privacy First:</strong> Lottery AI is designed with privacy as a core principle. Your data stays on your device.
               </p>
             </div>
+
+            <h3 className="text-lg text-white font-semibold mt-6 mb-3">2.6 KEMMI App</h3>
+            <p className="mb-3">For our KEMMI AI Companion application:</p>
+            <p className="mb-2"><strong className="text-white">Information we collect:</strong></p>
+            <ul className="list-disc pl-6 space-y-2 mb-4">
+              <li><strong className="text-white">Account information:</strong> Email address when you create an account (via Apple Sign-In, Google Sign-In, or email registration)</li>
+              <li><strong className="text-white">Your first name:</strong> Used to personalize your conversations with KEMMI</li>
+              <li><strong className="text-white">Conversation context:</strong> Last 10 messages are retained to maintain conversation flow</li>
+              <li><strong className="text-white">Important memories:</strong> Information you choose to share that KEMMI remembers for future conversations</li>
+              <li><strong className="text-white">Subscription status:</strong> Your current plan and credit balance</li>
+            </ul>
+            <p className="mb-2"><strong className="text-white">Privacy features:</strong></p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>All conversation data is <strong className="text-white">encrypted in transit and at rest</strong></li>
+              <li>We do <strong className="text-white">NOT</strong> sell, share, or use your conversations for advertising</li>
+              <li>Your data is stored securely on encrypted Supabase servers</li>
+              <li>You can <strong className="text-white">delete your account and all data</strong> at any time from Settings</li>
+              <li>We do not share your conversations with third parties</li>
+            </ul>
+            <div className="bg-[#ff6b6b]/[0.08] border border-[#ff6b6b]/20 rounded-xl p-5 mt-4">
+              <p className="text-[#ffc8c8]/90 text-sm font-semibold">
+                KEMMI is intended for users aged 18 and older.
+              </p>
+            </div>
           </section>
 
           {/* Section 3 */}
@@ -128,10 +152,29 @@ export default function PrivacyPage() {
             </ul>
 
             <p className="mb-2"><strong className="text-white">Lottery AI Premium:</strong></p>
-            <ul className="list-disc pl-6 space-y-1">
+            <ul className="list-disc pl-6 space-y-1 mb-4">
               <li><strong className="text-white">Monthly Subscription:</strong> $2.99 USD per month</li>
               <li><strong className="text-white">Annual Subscription:</strong> $19.99 USD per year</li>
             </ul>
+
+            <p className="mb-2"><strong className="text-white">KEMMI Subscriptions:</strong></p>
+            <ul className="list-disc pl-6 space-y-1 mb-4">
+              <li><strong className="text-white">Lite:</strong> $4.99 USD per month (150 messages)</li>
+              <li><strong className="text-white">Standard:</strong> $9.99 USD per month (400 messages)</li>
+              <li><strong className="text-white">Premium:</strong> $17.99 USD per month (1,000 messages)</li>
+            </ul>
+
+            <p className="mb-2"><strong className="text-white">KEMMI Bonus Packs (one-time purchases):</strong></p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li><strong className="text-white">Small Pack:</strong> $1.99 USD (+30 messages)</li>
+              <li><strong className="text-white">Medium Pack:</strong> $4.99 USD (+100 messages)</li>
+              <li><strong className="text-white">Large Pack:</strong> $9.99 USD (+250 messages)</li>
+            </ul>
+            <div className="bg-cyan/[0.08] border border-cyan/20 rounded-xl p-5 mt-4 mb-4">
+              <p className="text-white/80 text-sm">
+                <strong className="text-white">Note:</strong> KEMMI subscription credits reset monthly and do not roll over. Bonus pack credits never expire.
+              </p>
+            </div>
 
             <h3 className="text-lg text-white font-semibold mt-6 mb-3">3.2 Payment Processing</h3>
             <p className="mb-3">All subscription payments are processed exclusively through Apple&apos;s App Store. We do <strong className="text-white">NOT</strong> collect, store, or have access to:</p>
@@ -230,9 +273,12 @@ export default function PrivacyPage() {
             <h2 className="text-xl text-cyan font-semibold mb-4 pb-3 border-b border-cyan/20">8. Data Retention</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong className="text-white">Account data:</strong> Retained until you delete your account</li>
-              <li><strong className="text-white">Messages:</strong> Automatically deleted after 24 hours</li>
+              <li><strong className="text-white">CalculX messages:</strong> Automatically deleted after 24 hours</li>
               <li><strong className="text-white">Report data:</strong> Retained for 90 days, then automatically deleted</li>
               <li><strong className="text-white">Subscription data:</strong> Retained for the duration of your subscription plus 90 days for support purposes, or until you request deletion</li>
+              <li><strong className="text-white">KEMMI conversation context:</strong> Last 10 messages retained to maintain conversation flow</li>
+              <li><strong className="text-white">KEMMI memories:</strong> Retained until you delete them or delete your account</li>
+              <li><strong className="text-white">KEMMI account data:</strong> Retained until you delete your account from Settings</li>
             </ul>
           </section>
 
