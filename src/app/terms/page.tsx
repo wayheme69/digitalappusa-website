@@ -395,17 +395,17 @@ export default function TermsPage() {
                 <tr className="border-b border-white/10">
                   <td className="py-3 px-4 text-white/70">Lite</td>
                   <td className="py-3 px-4 text-white/70">$4.99 USD</td>
-                  <td className="py-3 px-4 text-white/70">150 messages</td>
+                  <td className="py-3 px-4 text-white/70">100 messages</td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-3 px-4 text-white/70">Standard</td>
                   <td className="py-3 px-4 text-white/70">$9.99 USD</td>
-                  <td className="py-3 px-4 text-white/70">400 messages</td>
+                  <td className="py-3 px-4 text-white/70">280 messages</td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-3 px-4 text-white/70">Premium</td>
                   <td className="py-3 px-4 text-white/70">$17.99 USD</td>
-                  <td className="py-3 px-4 text-white/70">1,000 messages</td>
+                  <td className="py-3 px-4 text-white/70">600 messages</td>
                 </tr>
               </tbody>
             </table>
@@ -426,17 +426,17 @@ export default function TermsPage() {
                 <tr className="border-b border-white/10">
                   <td className="py-3 px-4 text-white/70">Small Pack</td>
                   <td className="py-3 px-4 text-white/70">$1.99 USD</td>
-                  <td className="py-3 px-4 text-white/70">+30 messages</td>
+                  <td className="py-3 px-4 text-white/70">+25 messages</td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-3 px-4 text-white/70">Medium Pack</td>
                   <td className="py-3 px-4 text-white/70">$4.99 USD</td>
-                  <td className="py-3 px-4 text-white/70">+100 messages</td>
+                  <td className="py-3 px-4 text-white/70">+80 messages</td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-3 px-4 text-white/70">Large Pack</td>
                   <td className="py-3 px-4 text-white/70">$9.99 USD</td>
-                  <td className="py-3 px-4 text-white/70">+250 messages</td>
+                  <td className="py-3 px-4 text-white/70">+200 messages</td>
                 </tr>
               </tbody>
             </table>
@@ -481,6 +481,7 @@ export default function TermsPage() {
               <li>You will retain access to premium features until the end of your paid period</li>
               <li>All purchases are final and non-refundable</li>
               <li>For refund requests, contact Apple directly: <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer" className="text-cyan hover:underline">reportaproblem.apple.com</a></li>
+              <li><strong className="text-white">You can delete your account and all associated data at any time from the app Settings</strong></li>
             </ul>
 
             <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.9 Apple Terms</h3>
@@ -493,8 +494,11 @@ export default function TermsPage() {
 
             <h3 className="text-lg text-white font-semibold mt-6 mb-3">6.10 AI Disclaimer</h3>
             <div className="bg-[#ff6b6b]/[0.08] border border-[#ff6b6b]/20 rounded-xl p-5 mb-4">
+              <p className="text-[#ffc8c8]/90 text-[15px] leading-relaxed font-semibold mb-2">
+                KEMMI is an AI-powered companion, not a real person.
+              </p>
               <p className="text-[#ffc8c8]/90 text-[15px] leading-relaxed font-semibold">
-                KEMMI IS AN AI AND NOT A LICENSED THERAPIST OR MEDICAL PROFESSIONAL.
+                KEMMI IS NOT A LICENSED THERAPIST OR MEDICAL PROFESSIONAL.
               </p>
             </div>
             <p className="text-white/70 text-[15px] leading-relaxed mb-4">

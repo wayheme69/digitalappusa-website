@@ -132,6 +132,9 @@ export default function PrivacyPage() {
               <li>We do not share your conversations with third parties</li>
             </ul>
             <div className="bg-[#ff6b6b]/[0.08] border border-[#ff6b6b]/20 rounded-xl p-5 mt-4">
+              <p className="text-[#ffc8c8]/90 text-sm font-semibold mb-2">
+                KEMMI is an AI-powered companion, not a real person.
+              </p>
               <p className="text-[#ffc8c8]/90 text-sm font-semibold">
                 KEMMI is intended for users aged 18 and older.
               </p>
@@ -159,20 +162,26 @@ export default function PrivacyPage() {
 
             <p className="mb-2"><strong className="text-white">KEMMI Subscriptions:</strong></p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
-              <li><strong className="text-white">Lite:</strong> $4.99 USD per month (150 messages)</li>
-              <li><strong className="text-white">Standard:</strong> $9.99 USD per month (400 messages)</li>
-              <li><strong className="text-white">Premium:</strong> $17.99 USD per month (1,000 messages)</li>
+              <li><strong className="text-white">Lite:</strong> $4.99 USD per month (100 messages)</li>
+              <li><strong className="text-white">Standard:</strong> $9.99 USD per month (280 messages)</li>
+              <li><strong className="text-white">Premium:</strong> $17.99 USD per month (600 messages)</li>
             </ul>
 
             <p className="mb-2"><strong className="text-white">KEMMI Bonus Packs (one-time purchases):</strong></p>
             <ul className="list-disc pl-6 space-y-1">
-              <li><strong className="text-white">Small Pack:</strong> $1.99 USD (+30 messages)</li>
-              <li><strong className="text-white">Medium Pack:</strong> $4.99 USD (+100 messages)</li>
-              <li><strong className="text-white">Large Pack:</strong> $9.99 USD (+250 messages)</li>
+              <li><strong className="text-white">Small Pack:</strong> $1.99 USD (+25 messages)</li>
+              <li><strong className="text-white">Medium Pack:</strong> $4.99 USD (+80 messages)</li>
+              <li><strong className="text-white">Large Pack:</strong> $9.99 USD (+200 messages)</li>
             </ul>
             <div className="bg-cyan/[0.08] border border-cyan/20 rounded-xl p-5 mt-4 mb-4">
-              <p className="text-white/80 text-sm">
+              <p className="text-white/80 text-sm mb-3">
                 <strong className="text-white">Note:</strong> KEMMI subscription credits reset monthly and do not roll over. Bonus pack credits never expire.
+              </p>
+              <p className="text-white/80 text-sm mb-3">
+                <strong className="text-white">Auto-Renewal:</strong> Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period.
+              </p>
+              <p className="text-white/80 text-sm">
+                <strong className="text-white">To Cancel:</strong> Go to iPhone Settings &gt; Apple ID &gt; Subscriptions &gt; KEMMI
               </p>
             </div>
 
